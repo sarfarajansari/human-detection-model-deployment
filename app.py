@@ -4,10 +4,11 @@ import numpy as np
 from ultralytics import YOLO
 from PIL import Image
 import io
-from views import project_information, model_information, contributers, header, sidebar
+from views import  model_information,  header, sidebar
 
 
 model = YOLO('best.pt')
+
 
 
 def main():
@@ -17,10 +18,9 @@ def main():
     header.main()
     selected = sidebar.main()
 
-    if selected == "Project Information":
-        project_information.main()
+   
 
-    elif selected == "Predict Defects":
+    if selected == "Predict Defects":
         # Image
         upload_img_file = st.sidebar.file_uploader(
             'Upload Image', type=['jpg', 'jpeg', 'png'])
@@ -35,11 +35,14 @@ def main():
             image_bytes = io.BytesIO()
             image_pil.save(image_bytes, format='PNG')
 
+            # st.image(Image.fromarray(file_bytes), caption='Original Image',
+            #          use_column_width=True)
+            
+
             st.image(image_bytes, caption='Predicted Image',
                      use_column_width=True)
-
-    elif selected == "Contributors":
-        contributers.main()
+            
+            
     elif selected == "Model Information":
         model_information.main()
 

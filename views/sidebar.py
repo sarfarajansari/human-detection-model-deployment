@@ -6,13 +6,15 @@ def main():
         selected = option_menu.option_menu(
             "Main Menu",
             options=[
-                "Project Information",
                 "Model Information",
-                "Predict Defects",
-                "Contributors"
+                "Predict Defects"
+                
             ],
         )
 
+
     st.sidebar.markdown('---')
+
+    
 
     return selected

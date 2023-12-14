@@ -2,5 +2,5 @@ numpy
 Pillow
 streamlit
 streamlit_option_menu
-ultralytics==8.0.112
+ultralytics
 opencv-contrib-python-headless
