@@ -24,7 +24,6 @@ def main():
 
     """
     st.text(Architecture)
-    st.image('architecture.jpg')
     st.subheader('Training')
     Training = """
     The YOLOv8 model used in the AI Road Inspection System is trained on a large dataset of road images which were
