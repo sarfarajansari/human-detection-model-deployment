@@ -7,7 +7,7 @@ def main():
             "Main Menu",
             options=[
                 "Model Information",
-                "Predict Defects"
+                "Predict"
                 
             ],
         )

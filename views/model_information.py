@@ -3,11 +3,5 @@ import streamlit as st
 
 def main():
     st.subheader('Introduction')
-    Introduction = """
-    The Ai road Inspection system , is an innovatiove solution that leverages computer vision and deep learning techniques
-    to improve the road inspection and analysis. Traditional road Inspection methods often rely on manual labour 
-    which is time consuming  and prone to human error. The AI road inspection system aims to address these limitations by enabling 
-    real time detection, classification and analysis of various objects and anomalies on roads including potholes, cracks and 
-    alligator cracks. 
-    """
+    Introduction = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
     st.text(Introduction)
