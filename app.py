@@ -10,7 +10,6 @@ from views import  model_information,  header, sidebar
 model = YOLO('best.pt')
 
 
-
 def main():
     with open("styles.css", "r") as source_style:
         st.markdown(f"<style>{source_style.read()}</style>",
