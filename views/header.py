@@ -1,7 +1,7 @@
 import streamlit as st
 
 def main():
-    st.title("AI Road Inspection System")
+    st.title("Human Detection")
     st.container()
 
     st.image("logo.png")
